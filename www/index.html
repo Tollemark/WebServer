@@ -1,23 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to My Web Server</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="container">
-        <h1>🚀 Welcome to Your Web Server!</h1>
-        <p>Your web server is running successfully.</p>
-        <p>Place your website files in the <strong>www directory</strong> to serve them.</p>
-        <div class="info">
-            <h2>📂 Next Steps</h2>
-            <ul>
-                <li>Check your <b>config.ini</b> for server settings.</li>
-            </ul>
+    <title>Welcome to David Web Server</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="h-full">
+    <div class="min-h-full">
+      <nav class="bg-gray-800">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="flex h-16 items-center justify-between">
+            <div class="flex items-center">
+              <div class="flex shrink-0 items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" 
+                  stroke-width="1.5" stroke="rgb(99, 102, 241)" class="h-8 w-auto">
+                  <path stroke-linecap="round" stroke-linejoin="round" 
+                    d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z" />
+                </svg>
+              </div>
+              <div class="hidden md:block">
+                <div class="ml-10 flex items-baseline space-x-4">
+                  <a href="./index.html" class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white" aria-current="page">Dashboard</a>
+                  <a href="./counter-strike.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Counter Strike</a>
+                  <a href="./path-of-exile.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Path of Exile</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <footer>Powered by Your Web Server 🚀</footer>
+        <div class="md:hidden" id="mobile-menu">
+          <div class="space-y-1 px-2 pt-2 pb-3 sm:px-3">
+            <a href="./index.html" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white" aria-current="page">Dashboard</a>
+            <a href="./counter-strike.html" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Counter Strike</a>
+            <a href="./path-of-exile.html" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Path of Exile</a>
+          </div>
+        </div>
+      </nav>
+      <header class="bg-white shadow-sm">
+        <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+          <h1 class="text-3xl font-bold tracking-tight text-gray-900">Dashboard</h1>
+        </div>
+      </header>
+      <main>
+        <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+          <section class="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:px-8">
+            <div class="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,var(--color-indigo-100),white)] opacity-20"></div>
+            <div class="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-white ring-1 shadow-xl shadow-indigo-600/10 ring-indigo-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center"></div>
+            <div class="mx-auto max-w-2xl lg:max-w-4xl">
+              <figure class="mt-10">
+                <blockquote class="text-center text-xl/8 font-semibold text-gray-900 sm:text-2xl/9">
+                  <p>"Welcome to the <span style="color: orange;">DavidServer</span>—the finest server project where 'planned downtime' is just 'downtime we forgot to plan!' 
+                    For now, I'm showcasing pictures of my favorite games until inspiration strikes. Stay tuned... or don't, the server might be napping."
+                  </p>
+                </blockquote>
+                <figcaption class="mt-10">
+                  <img class="mx-auto size-10 rounded-full" src="./assets/profile.png" alt="">
+                  <div class="mt-4 flex items-center justify-center space-x-3 text-base">
+                    <div class="font-semibold text-gray-900">Davido</div>
+                    <svg viewBox="0 0 2 2" width="3" height="3" aria-hidden="true" class="fill-gray-900">
+                      <circle cx="1" cy="1" r="1" />
+                    </svg>
+                    <div class="text-gray-600">CEO of DavidServer</div>
+                  </div>
+                </figcaption>
+              </figure>
+            </div>
+          </section>
+        </div>
+      </main>
     </div>
-</body>
+  </body>
 </html>
